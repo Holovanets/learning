@@ -1,15 +1,14 @@
 import React from 'react'
 
 const PostItem = (props) => {
-  const [id, title, body] = Object.values(props.post)
   return (
     <div>
       <div className="post">
         <div className="post__content">
           <strong>
-            {id}. {title}
+            {props.number}. {props.post.title}
           </strong>
-          <div>{body}</div>
+          <div>{props.post.body}</div>
         </div>
         <div className="post__btns">
           <button>Удалить</button>
