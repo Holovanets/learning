@@ -7,11 +7,16 @@
 
 #root {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App {
   width: 800px;
+}
+
+.post__btns {
+  display: flex;
 }
 
 .post {
@@ -36,4 +41,36 @@
 .post-exit-active {
   transform: translateX(-100vw);
   transition: all 500ms ease-in;
+}
+
+.page__swapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+
+.page__current {
+  border: 2px solid orangered;
+  font-weight: bold;
+  background-color: rgb(218, 215, 215);
+}
+.navBar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: lightgray;
+}
+.navBar__links {
+  margin-left: auto;
 }
